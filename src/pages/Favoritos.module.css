@@ -1,0 +1,80 @@
+.favoritosContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.materiaFavorita {
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.favoritaContent {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.iconoFavorito {
+  font-size: 5rem;
+  animation: pulse 2s infinite ease-in-out;
+  background: rgba(255, 255, 255, 0.05);
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid var(--glass-border);
+  flex-shrink: 0;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.infoFavorita {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.infoFavorita h2 {
+  font-size: 2rem;
+  color: var(--text-primary);
+}
+
+.infoFavorita p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+.aprenderSection {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sectionTitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+@media (max-width: 768px) {
+  .favoritaContent {
+    flex-direction: column;
+    text-align: center;
+  }
+}
