@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f4f4;
+}
+
+/* HEADER */
+
+.header {
+  width: 100%;
+
+  background: #2563eb;
+
+  padding: 20px 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  flex-wrap: wrap;
+}
+
+.header h2 {
+  color: white;
+  font-size: 28px;
+}
+
+.header nav {
+  display: flex;
+  gap: 20px;
+
+  flex-wrap: wrap;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.header a:hover {
+  color: #dbeafe;
+}
+
+/* INICIO */
+
+.inicio {
+  padding: 50px;
+}
+
+/* PRESENTACION */
+
+.presentacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 40px;
+
+  flex-wrap: wrap;
+
+  margin-bottom: 50px;
+}
+
+.texto {
+  flex: 1;
+}
+
+.texto h1 {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.texto h2 {
+  font-size: 35px;
+  margin-bottom: 15px;
+
+  color: #2563eb;
+}
+
+.texto p {
+  font-size: 22px;
+}
+
+.imagen-container {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+}
+
+.imagen {
+  width: 280px;
+}
+
+/* CARDS */
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  flex-wrap: wrap;
+
+  margin-top: 30px;
+}
+
+.card {
+  background: white;
+
+  width: 280px;
+
+  padding: 25px;
+
+  border-radius: 12px;
+
+  box-shadow: 0 2px 10px
+    rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  color: #2563eb;
+
+  font-size: 30px;
+
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 18px;
+}
+
+/* MATERIAS */
+
+.materias {
+  display: flex;
+  min-height: 80vh;
+
+  flex-wrap: wrap;
+}
+
+.menu {
+  width: 320px;
+
+  background: white;
+
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.menu button {
+  padding: 15px;
+
+  border: none;
+
+  background: #e5e7eb;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  font-size: 16px;
+}
+
+.menu button:hover {
+  background: #d1d5db;
+}
+
+.activo {
+  background: #2563eb !important;
+  color: white;
+}
+
+.contenido {
+  flex: 1;
+
+  padding: 40px;
+}
+
+.contenido h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.contenido p {
+  font-size: 22px;
+}
+
+/* FAVORITOS */
+
+.favoritos {
+  padding: 50px;
+
+  text-align: center;
+}
+
+.favoritos h1 {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+.favoritos h2 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+
+  color: #2563eb;
+}
+
+.favoritos p {
+  font-size: 20px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .presentacion {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .materias {
+    flex-direction: column;
+  }
+
+  .menu {
+    width: 100%;
+  }
+
+  .header {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .header nav {
+    justify-content: center;
+  }
+}
